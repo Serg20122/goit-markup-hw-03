@@ -1,19 +1,66 @@
 /* Body */
-body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
 }
 
 a {
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
 }
 
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* Header */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-navigation {
+    display: flex;
+}
+
+.page-nav {
+    display: flex;
+    column-gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
 .logo {
     font-family: "Raleway", sans-serif;
     color: #4D5AE5;
@@ -22,6 +69,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     line-height: 1.17;
+    padding: 25.5px 76px 25.5px;
 }
 
 .logo_studio {
@@ -35,6 +83,7 @@ ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
 }
 
 .page-nav .link:hover,
@@ -42,8 +91,17 @@ ul {
     color: #404bbf;
 }
 
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .address {
-    font-style: normal
+    font-style: normal;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
 }
 
 .address_contakt {
@@ -53,6 +111,7 @@ ul {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
 }
 
 .address .address_contakt:hover,
@@ -62,16 +121,24 @@ ul {
 
 
 /* Section 1 */
-.section {
+.about-section {
     background-color: #2e2f42;
+    display: flex;
 }
 
 .section-title {
+    width: 496px;
+    height: 120;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 201px;
+    padding-bottom: 279px;
     color: #FFF;
     text-align: center;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    justify-content: center
 }
 
 .section-button {
@@ -83,6 +150,8 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+
+
 }
 
 .section-button:hover,
@@ -91,12 +160,41 @@ ul {
 }
 
 /* Section 2 */
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.section-our-teams {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    text-align: center;
+}
+
+.list {
+    width: calc((100% - 72px) / 4);
+}
 .section-title-one {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .paragraph {
@@ -122,7 +220,7 @@ ul {
 }
 
 .section-list {
-    background-color: #FFFFFF;
+    background: #FFF;
 }
 
 .section-subtitle {
@@ -144,6 +242,7 @@ ul {
 }
 
 /* Section 4 */
+
 .section-title-four {
     color: #2E2F42;
     text-align: center;
