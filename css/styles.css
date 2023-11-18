@@ -105,9 +105,11 @@ body {
 
 .address {
     font-style: normal;
+}
+
+.address_contakt {
     padding-top: 24px;
     padding-bottom: 24px;
-
 }
 
 .address_contakt {
@@ -131,6 +133,8 @@ body {
     background-color: #2e2f42;
     display: flex;
     padding: 188px 0;
+    
+
 }
 
 .section-title {
@@ -330,13 +334,14 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px; 
 
 }
 
 .footer-logo-studio {
     color: #F4F4FD;
-    display: inline-block;
-    margin-bottom: 16px; 
+    
 }
 
 .footer-paragraph {
