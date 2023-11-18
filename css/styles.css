@@ -43,6 +43,10 @@ body {
 
 
 /* Header */
+.main-header {
+    border-bottom: 1px solid #e7e9fc
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -51,11 +55,12 @@ body {
 
 .page-navigation {
     display: flex;
+    align-items: center;
 }
 
 .page-nav {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -70,6 +75,7 @@ body {
     text-transform: uppercase;
     line-height: 1.17;
     padding: 25.5px 76px 25.5px;
+    margin-right: 76px;
 }
 
 .logo_studio {
@@ -124,10 +130,11 @@ body {
 .about-section {
     background-color: #2e2f42;
     display: flex;
+    padding: 188px 0;
 }
 
 .section-title {
-    width: 496px;
+    max-width: 496px;
     height: 120;
     margin-left: auto;
     margin-right: auto;
@@ -150,6 +157,11 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 
 
 }
@@ -208,6 +220,7 @@ body {
 /* Section 3 */
 .section-three {
     background: #F4F4FD;
+    padding: 120px 0;
 }
 
 .section-title-three {
@@ -217,10 +230,21 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.menu {
+    display: flex;
+    gap: 24px;
+}
+.item-name {
+    padding: 32px 0;
+
 }
 
 .section-list {
     background: #FFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .section-subtitle {
@@ -230,6 +254,8 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+     text-align: center;
+     margin-bottom: 8px;
 }
 
 .section-paragraph {
@@ -239,9 +265,14 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 /* Section 4 */
+
+.portfolio-container {
+    padding: 120px 0 120px 0;
+}
 
 .section-title-four {
     color: #2E2F42;
@@ -251,6 +282,21 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.menu-portfolio {
+    display: flex;
+     flex-wrap: wrap;
+     column-gap: 24px;
+      row-gap: 48px;
+}
+.sub-menu {
+    width: calc((100% - 48px) / 3); 
+}
+.list-submenu {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .section-subtitle-four {
@@ -259,6 +305,7 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .section-paragraph-four {
