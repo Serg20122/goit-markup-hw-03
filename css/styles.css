@@ -143,10 +143,9 @@ body {
 
 .section-title {
     max-width: 496px;
-    height: 120;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
     color: #FFF;
     text-align: center;
     font-size: 56px;
